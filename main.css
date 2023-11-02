@@ -1,0 +1,321 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  background: black;
+}
+
+.container {
+  background: black;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.orange-line {
+  position: absolute;
+  border: 1px solid orange;
+  height: 1px;
+  width: 150px;
+  top: 400px;
+}
+
+.half-circle {
+  width: 20vmin;
+  height: 10vmin;
+  border: 4px solid #87D80A;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-left-width: 1vmin;
+  border-right-width: 0.2vmin;
+  border-top-left-radius: 10vmin;
+  border-top-right-radius: 10vmin;
+  border-bottom: 0;
+}
+
+.upside-down-half-circle {
+  width: 20vmin;
+  height: 10vmin;
+  border: 4px solid #87D80A;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-left-width: 1vmin;
+  border-right-width: 0.2vmin;
+  position: absolute;
+  top: 410px;
+  border-bottom-left-radius: 10vmin;
+  border-bottom-right-radius: 10vmin;
+  border-top: 0;
+  border-left-width: 0.2vmin;
+  border-right-width: 1vmin;
+}
+
+.letters {
+  position: absolute;
+  top: 0px;
+  left: -12px;
+}
+
+.letter-b {
+  position: relative;
+  height: 40px;
+  color: #fff;
+  left: 30px;
+  top: 25px;
+  border-width: 10px 10px 10px;
+  border-style: solid;
+  border-color: transparent transparent transparent transparent;
+}
+.letter-b::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  height: 30px;
+  width: 33px;
+  border-radius: 0 14.5px 14.5px 0;
+  border: 10px solid #fff;
+}
+.letter-b::after {
+  content: "";
+  position: absolute;
+  left: -10px;
+  bottom: -20px;
+  height: 30px;
+  width: 35px;
+  background: transparent;
+  border-radius: 0 20.5px 20.5px 0;
+  border: 10px solid #fff;
+}
+
+.line-b {
+  position: absolute;
+  width: 12px;
+  height: 0px;
+  left: -20px;
+  top: -10px;
+  border-bottom: 3px solid #fff;
+  border-right: 3px solid #fff;
+  border-radius: 20px;
+}
+
+.line-b-bottom {
+  position: absolute;
+  width: 12px;
+  height: 0px;
+  left: -20px;
+  top: 38px;
+  border-bottom: 3px solid #fff;
+  border-right: 3px solid #fff;
+  border-radius: 20px;
+}
+
+.line-b-reversed {
+  position: absolute;
+  width: 12px;
+  height: 0px;
+  left: 37px;
+  top: -10px;
+  border-bottom: 3px solid #fff;
+  border-right: 3px solid #fff;
+  border-radius: 20px;
+}
+
+.line-b-reversed-bottom {
+  position: absolute;
+  width: 12px;
+  height: 0px;
+  left: 37px;
+  top: 38px;
+  border-bottom: 3px solid #fff;
+  border-right: 3px solid #fff;
+  border-radius: 20px;
+}
+
+.letter-b-reversed {
+  position: relative;
+  width: 50px;
+  height: 40px;
+  color: #fff;
+  right: -54px;
+  top: -15px;
+  border-width: 10px 10px 10px 10px;
+  border-style: solid;
+  border-color: transparent transparent transparent transparent;
+}
+
+.letter-b-reversed::before {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  height: 30px;
+  width: 33px;
+  background: transparent;
+  border-radius: 14.5px 0 0 14.5px;
+  border: 10px solid #fff;
+}
+
+.letter-b-reversed::after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  bottom: -20px;
+  height: 30px;
+  width: 35px;
+  background: transparent;
+  border-radius: 20.5px 0 0 20.5px;
+  border: 10px solid #fff;
+}
+
+.letter-k {
+  position: absolute;
+  width: 40px;
+  height: 25px;
+  top: 410px;
+  left: 708px;
+  border-style: solid;
+  border-color: #fff;
+  border-width: 0 0 0 3px;
+  overflow: hidden;
+}
+
+.letter-k::before {
+  content: "";
+  position: absolute;
+  top: -22px;
+  left: 7px;
+  width: 4%;
+  height: 40px;
+  left: 7px;
+  background: #fff;
+  transform: rotate(30deg);
+}
+
+.letter-k::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 2px;
+  width: 5%;
+  height: 20px;
+  background: #fff;
+  transform: rotate(-30deg);
+}
+
+.letter-i {
+  position: absolute;
+  top: 410px;
+  left: 722px;
+  height: 25px;
+  border-width: 0 3px 0 0;
+  border-style: solid;
+  border-color: #fff;
+}
+
+.letter-t {
+  position: absolute;
+  top: 410px;
+  left: 730px;
+  width: 10px;
+  border-width: 3px 0 0 0;
+  border-style: solid;
+  border-color: #fff;
+}
+
+.letter-t::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 23px;
+  background: #fff;
+  left: 3.5px;
+}
+
+.letter-c {
+  position: absolute;
+  top: 410px;
+  left: 745px;
+  width: 15px;
+  height: 25px;
+  border-width: 3px 0 3px 3px;
+  border-style: solid;
+  border-color: #fff transparent #fff #fff;
+  background-color: transparent;
+  border-radius: 10px 7px 7px 10px;
+}
+
+.letter-h {
+  position: absolute;
+  top: 410px;
+  left: 765px;
+  width: 15px;
+  height: 25px;
+  border-width: 0 3px 0 3px;
+  border-style: solid;
+  border-color: #fff;
+}
+
+.letter-h::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 3px;
+  left: 0;
+  top: 10px;
+  background: #fff;
+}
+
+.letter-e {
+  position: absolute;
+  top: 410px;
+  left: 785px;
+  width: 15px;
+  height: 25px;
+  border-width: 3px 0 3px 3px;
+  border-style: solid;
+  border-color: #fff;
+}
+
+.letter-e::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 12px;
+  height: 3.5px;
+  background: #fff;
+}
+
+.letter-n {
+  position: absolute;
+  top: 410px;
+  left: 805px;
+  height: 25px;
+  width: 13px;
+  border-style: solid;
+  border-color: #fff;
+  border-width: 0 3px 0 3px;
+}
+
+.letter-n::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 27px;
+  transform-origin: 1px 6px 0;
+  transform: rotate(-25deg);
+  background: #fff;
+}
+
+/*# sourceMappingURL=main.css.map */
